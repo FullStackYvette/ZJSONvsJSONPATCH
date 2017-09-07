@@ -1,0 +1,16 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.github.fge', name: 'json-patch', version: '1.9'
+    compile group: 'com.flipkart.zjsonpatch', name: 'zjsonpatch', version: '0.2.1'
+}
